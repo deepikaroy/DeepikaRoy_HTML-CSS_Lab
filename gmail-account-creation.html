@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            margin: 60px auto;
+            max-width: 400px;
+            padding: 16px;
+            border: 1px solid white;
+        }
+        /* Full-width input fields */
+        
+        input {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: 1px solid white;
+            background: white;
+        }
+        
+        input:focus {
+            background-color: steelblue;
+            opacity: 0.35;
+            outline: none;
+        }
+        
+        button {
+            display: inline-block;
+            background-color: rgb(221, 160, 250);
+            color: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 40%;
+            margin-right: 2em;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-img">
+        <form class="container" method="post">
+
+            <h2>Create Gmail Account</h2>
+            <input type="text" placeholder="Full Name" name="fullname" required/>
+            <br>
+            <input type="number" placeholder="Contact Number" name="contactNumber" min="666666666" max="999999999" required/>
+            <br>
+            <input type="email" placeholder="Email" name="email" required/>
+            <br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
